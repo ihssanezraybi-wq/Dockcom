@@ -4,7 +4,7 @@ services:
 
   backend:
     build: ./backend
-    image: votre_username_docker/flask-api:latest
+    image: vihssanezr/flaskdb:latest
     ports:
       - "5000:5000"
     environment:
@@ -17,7 +17,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: votre_username_docker/frontend-app:latest
+    image: ihssanezr/frontend-app:latest
     ports:
       - "3000:80"
     depends_on:
